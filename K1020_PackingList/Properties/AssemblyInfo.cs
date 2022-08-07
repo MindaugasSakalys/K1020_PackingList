@@ -35,4 +35,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.0.3")]
 [assembly: AssemblyFileVersion("1.0.3")]
 
-//Squirrel --releasify K1020_PackingList.1.0.1.nupkg
+//Squirrel --releasify K1020_PackingList.1.0.3.nupkg
