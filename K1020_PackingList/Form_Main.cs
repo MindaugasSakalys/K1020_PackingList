@@ -34,7 +34,7 @@ namespace K1020_PackingList
             StartScreen(false);
             await CheckForUpdates();
 
-            DataAccess.DBmain(1); // 1-Raspberry  2-Server
+            DataAccess.DBmain(2); // 1-Raspberry  2-Server
 
             if (DataAccess.ConnToMysql())
             {
