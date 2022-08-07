@@ -30,12 +30,12 @@ namespace K1020_PackingList
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
@@ -66,22 +66,7 @@ namespace K1020_PackingList
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mainBoxNrDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.boxNrDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serialNrDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UniqNr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paletIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paletNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.simCardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.versionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.countryCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.batteryCountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addDateTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modDateTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serialsmodelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -89,9 +74,6 @@ namespace K1020_PackingList
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serialNrDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serialTmpmodelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
@@ -128,6 +110,33 @@ namespace K1020_PackingList
             this.button5 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument2 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument3 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument4 = new System.Drawing.Printing.PrintDocument();
+            this.printDocument5 = new System.Drawing.Printing.PrintDocument();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.VersionLabel = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mainBoxNrDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.boxNrDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serialNrDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paletIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paletNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.simCardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.versionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.countryCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.batteryCountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.addDateTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modDateTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serialsmodelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serialNrDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serialTmpmodelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mainBoxNrDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.boxNrDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -144,15 +153,6 @@ namespace K1020_PackingList
             this.addDateTimeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modDateTimeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.serialsmodelBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.printDocument2 = new System.Drawing.Printing.PrintDocument();
-            this.printDocument3 = new System.Drawing.Printing.PrintDocument();
-            this.printDocument4 = new System.Drawing.Printing.PrintDocument();
-            this.printDocument5 = new System.Drawing.Printing.PrintDocument();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.VersionLabel = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -160,10 +160,8 @@ namespace K1020_PackingList
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.serialsmodelBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.serialTmpmodelBindingSource)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -171,8 +169,10 @@ namespace K1020_PackingList
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.serialsmodelBindingSource1)).BeginInit();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.serialsmodelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.serialTmpmodelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.serialsmodelBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -363,7 +363,7 @@ namespace K1020_PackingList
             this.button4.Image = global::K1020_PackingList.Properties.Resources.Excel_icon;
             this.button4.Location = new System.Drawing.Point(4, 60);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 40);
+            this.button4.Size = new System.Drawing.Size(70, 40);
             this.button4.TabIndex = 1;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -517,14 +517,14 @@ namespace K1020_PackingList
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn1,
@@ -543,14 +543,14 @@ namespace K1020_PackingList
             this.addDateTimeDataGridViewTextBoxColumn,
             this.modDateTimeDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.serialsmodelBindingSource;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView2.Location = new System.Drawing.Point(4, 5);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
@@ -558,42 +558,6 @@ namespace K1020_PackingList
             this.dataGridView2.RowTemplate.Height = 30;
             this.dataGridView2.Size = new System.Drawing.Size(880, 427);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // idDataGridViewTextBoxColumn1
-            // 
-            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn1.MinimumWidth = 120;
-            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn1.Visible = false;
-            this.idDataGridViewTextBoxColumn1.Width = 120;
-            // 
-            // mainBoxNrDataGridViewTextBoxColumn
-            // 
-            this.mainBoxNrDataGridViewTextBoxColumn.DataPropertyName = "MainBoxNr";
-            this.mainBoxNrDataGridViewTextBoxColumn.HeaderText = "MainBoxNr";
-            this.mainBoxNrDataGridViewTextBoxColumn.Name = "mainBoxNrDataGridViewTextBoxColumn";
-            this.mainBoxNrDataGridViewTextBoxColumn.ReadOnly = true;
-            this.mainBoxNrDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // boxNrDataGridViewTextBoxColumn
-            // 
-            this.boxNrDataGridViewTextBoxColumn.DataPropertyName = "BoxNr";
-            this.boxNrDataGridViewTextBoxColumn.HeaderText = "BoxNr";
-            this.boxNrDataGridViewTextBoxColumn.Name = "boxNrDataGridViewTextBoxColumn";
-            this.boxNrDataGridViewTextBoxColumn.ReadOnly = true;
-            this.boxNrDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // serialNrDataGridViewTextBoxColumn1
-            // 
-            this.serialNrDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.serialNrDataGridViewTextBoxColumn1.DataPropertyName = "SerialNr";
-            this.serialNrDataGridViewTextBoxColumn1.HeaderText = "Serijinis nr.";
-            this.serialNrDataGridViewTextBoxColumn1.MinimumWidth = 120;
-            this.serialNrDataGridViewTextBoxColumn1.Name = "serialNrDataGridViewTextBoxColumn1";
-            this.serialNrDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.serialNrDataGridViewTextBoxColumn1.Width = 120;
             // 
             // UniqNr
             // 
@@ -603,97 +567,6 @@ namespace K1020_PackingList
             this.UniqNr.Name = "UniqNr";
             this.UniqNr.ReadOnly = true;
             this.UniqNr.Width = 130;
-            // 
-            // paletIdDataGridViewTextBoxColumn
-            // 
-            this.paletIdDataGridViewTextBoxColumn.DataPropertyName = "PaletId";
-            this.paletIdDataGridViewTextBoxColumn.HeaderText = "PaletId";
-            this.paletIdDataGridViewTextBoxColumn.Name = "paletIdDataGridViewTextBoxColumn";
-            this.paletIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.paletIdDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // paletNameDataGridViewTextBoxColumn
-            // 
-            this.paletNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.paletNameDataGridViewTextBoxColumn.DataPropertyName = "PaletName";
-            this.paletNameDataGridViewTextBoxColumn.HeaderText = "Paletė";
-            this.paletNameDataGridViewTextBoxColumn.Name = "paletNameDataGridViewTextBoxColumn";
-            this.paletNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.paletNameDataGridViewTextBoxColumn.Width = 77;
-            // 
-            // codeIdDataGridViewTextBoxColumn
-            // 
-            this.codeIdDataGridViewTextBoxColumn.DataPropertyName = "CodeId";
-            this.codeIdDataGridViewTextBoxColumn.HeaderText = "CodeId";
-            this.codeIdDataGridViewTextBoxColumn.Name = "codeIdDataGridViewTextBoxColumn";
-            this.codeIdDataGridViewTextBoxColumn.ReadOnly = true;
-            this.codeIdDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // codeNameDataGridViewTextBoxColumn
-            // 
-            this.codeNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.codeNameDataGridViewTextBoxColumn.DataPropertyName = "CodeName";
-            this.codeNameDataGridViewTextBoxColumn.HeaderText = "Kodas";
-            this.codeNameDataGridViewTextBoxColumn.Name = "codeNameDataGridViewTextBoxColumn";
-            this.codeNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.codeNameDataGridViewTextBoxColumn.Width = 76;
-            // 
-            // simCardDataGridViewTextBoxColumn
-            // 
-            this.simCardDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.simCardDataGridViewTextBoxColumn.DataPropertyName = "SimCard";
-            this.simCardDataGridViewTextBoxColumn.HeaderText = "SIM";
-            this.simCardDataGridViewTextBoxColumn.Name = "simCardDataGridViewTextBoxColumn";
-            this.simCardDataGridViewTextBoxColumn.ReadOnly = true;
-            this.simCardDataGridViewTextBoxColumn.Width = 58;
-            // 
-            // versionDataGridViewTextBoxColumn
-            // 
-            this.versionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.versionDataGridViewTextBoxColumn.DataPropertyName = "Version";
-            this.versionDataGridViewTextBoxColumn.HeaderText = "Versija";
-            this.versionDataGridViewTextBoxColumn.Name = "versionDataGridViewTextBoxColumn";
-            this.versionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.versionDataGridViewTextBoxColumn.Width = 81;
-            // 
-            // countryCodeDataGridViewTextBoxColumn
-            // 
-            this.countryCodeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.countryCodeDataGridViewTextBoxColumn.DataPropertyName = "CountryCode";
-            this.countryCodeDataGridViewTextBoxColumn.HeaderText = "Šalis";
-            this.countryCodeDataGridViewTextBoxColumn.Name = "countryCodeDataGridViewTextBoxColumn";
-            this.countryCodeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.countryCodeDataGridViewTextBoxColumn.Width = 67;
-            // 
-            // batteryCountDataGridViewTextBoxColumn
-            // 
-            this.batteryCountDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.batteryCountDataGridViewTextBoxColumn.DataPropertyName = "BatteryCount";
-            this.batteryCountDataGridViewTextBoxColumn.HeaderText = "Baterija";
-            this.batteryCountDataGridViewTextBoxColumn.Name = "batteryCountDataGridViewTextBoxColumn";
-            this.batteryCountDataGridViewTextBoxColumn.ReadOnly = true;
-            this.batteryCountDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // addDateTimeDataGridViewTextBoxColumn
-            // 
-            this.addDateTimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.addDateTimeDataGridViewTextBoxColumn.DataPropertyName = "AddDateTime";
-            this.addDateTimeDataGridViewTextBoxColumn.HeaderText = "Data/Laikas";
-            this.addDateTimeDataGridViewTextBoxColumn.MinimumWidth = 100;
-            this.addDateTimeDataGridViewTextBoxColumn.Name = "addDateTimeDataGridViewTextBoxColumn";
-            this.addDateTimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // modDateTimeDataGridViewTextBoxColumn
-            // 
-            this.modDateTimeDataGridViewTextBoxColumn.DataPropertyName = "ModDateTime";
-            this.modDateTimeDataGridViewTextBoxColumn.HeaderText = "ModDateTime";
-            this.modDateTimeDataGridViewTextBoxColumn.Name = "modDateTimeDataGridViewTextBoxColumn";
-            this.modDateTimeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.modDateTimeDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // serialsmodelBindingSource
-            // 
-            this.serialsmodelBindingSource.DataSource = typeof(K1020_PackingList.Models.Serials_model);
             // 
             // panel2
             // 
@@ -775,27 +648,27 @@ namespace K1020_PackingList
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.serialNrDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.serialTmpmodelBindingSource;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Location = new System.Drawing.Point(4, 111);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -805,27 +678,6 @@ namespace K1020_PackingList
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(287, 433);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Eil.nr";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Width = 67;
-            // 
-            // serialNrDataGridViewTextBoxColumn
-            // 
-            this.serialNrDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.serialNrDataGridViewTextBoxColumn.DataPropertyName = "SerialNr";
-            this.serialNrDataGridViewTextBoxColumn.HeaderText = "Serijinis";
-            this.serialNrDataGridViewTextBoxColumn.Name = "serialNrDataGridViewTextBoxColumn";
-            this.serialNrDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // serialTmpmodelBindingSource
-            // 
-            this.serialTmpmodelBindingSource.DataSource = typeof(K1020_PackingList.Models.SerialTmp_model);
             // 
             // tabPage2
             // 
@@ -1253,14 +1105,14 @@ namespace K1020_PackingList
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView3.AutoGenerateColumns = false;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn2,
@@ -1279,14 +1131,14 @@ namespace K1020_PackingList
             this.addDateTimeDataGridViewTextBoxColumn1,
             this.modDateTimeDataGridViewTextBoxColumn1});
             this.dataGridView3.DataSource = this.serialsmodelBindingSource1;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView3.Location = new System.Drawing.Point(11, 164);
             this.dataGridView3.MultiSelect = false;
             this.dataGridView3.Name = "dataGridView3";
@@ -1297,6 +1149,221 @@ namespace K1020_PackingList
             this.dataGridView3.Size = new System.Drawing.Size(1087, 374);
             this.dataGridView3.TabIndex = 0;
             this.dataGridView3.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView3_CellMouseClick);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printDocument2
+            // 
+            this.printDocument2.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument2_PrintPage);
+            // 
+            // printDocument3
+            // 
+            this.printDocument3.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument3_PrintPage);
+            // 
+            // printDocument4
+            // 
+            this.printDocument4.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument4_PrintPage);
+            // 
+            // printDocument5
+            // 
+            this.printDocument5.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument5_PrintPage);
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel8.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel8.Controls.Add(this.VersionLabel);
+            this.panel8.Controls.Add(this.label24);
+            this.panel8.Location = new System.Drawing.Point(-2, 657);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1215, 28);
+            this.panel8.TabIndex = 12;
+            // 
+            // VersionLabel
+            // 
+            this.VersionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.VersionLabel.AutoSize = true;
+            this.VersionLabel.ForeColor = System.Drawing.Color.White;
+            this.VersionLabel.Location = new System.Drawing.Point(1153, 8);
+            this.VersionLabel.Name = "VersionLabel";
+            this.VersionLabel.Size = new System.Drawing.Size(55, 13);
+            this.VersionLabel.TabIndex = 1;
+            this.VersionLabel.Text = "v 0.1.00.0";
+            // 
+            // label24
+            // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(5, 4);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(105, 18);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Darbuotojas:";
+            this.label24.Visible = false;
+            // 
+            // idDataGridViewTextBoxColumn1
+            // 
+            this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn1.MinimumWidth = 120;
+            this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
+            this.idDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn1.Visible = false;
+            this.idDataGridViewTextBoxColumn1.Width = 120;
+            // 
+            // mainBoxNrDataGridViewTextBoxColumn
+            // 
+            this.mainBoxNrDataGridViewTextBoxColumn.DataPropertyName = "MainBoxNr";
+            this.mainBoxNrDataGridViewTextBoxColumn.HeaderText = "MainBoxNr";
+            this.mainBoxNrDataGridViewTextBoxColumn.Name = "mainBoxNrDataGridViewTextBoxColumn";
+            this.mainBoxNrDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mainBoxNrDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // boxNrDataGridViewTextBoxColumn
+            // 
+            this.boxNrDataGridViewTextBoxColumn.DataPropertyName = "BoxNr";
+            this.boxNrDataGridViewTextBoxColumn.HeaderText = "BoxNr";
+            this.boxNrDataGridViewTextBoxColumn.Name = "boxNrDataGridViewTextBoxColumn";
+            this.boxNrDataGridViewTextBoxColumn.ReadOnly = true;
+            this.boxNrDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // serialNrDataGridViewTextBoxColumn1
+            // 
+            this.serialNrDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.serialNrDataGridViewTextBoxColumn1.DataPropertyName = "SerialNr";
+            this.serialNrDataGridViewTextBoxColumn1.HeaderText = "Serijinis nr.";
+            this.serialNrDataGridViewTextBoxColumn1.MinimumWidth = 120;
+            this.serialNrDataGridViewTextBoxColumn1.Name = "serialNrDataGridViewTextBoxColumn1";
+            this.serialNrDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.serialNrDataGridViewTextBoxColumn1.Width = 120;
+            // 
+            // paletIdDataGridViewTextBoxColumn
+            // 
+            this.paletIdDataGridViewTextBoxColumn.DataPropertyName = "PaletId";
+            this.paletIdDataGridViewTextBoxColumn.HeaderText = "PaletId";
+            this.paletIdDataGridViewTextBoxColumn.Name = "paletIdDataGridViewTextBoxColumn";
+            this.paletIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paletIdDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // paletNameDataGridViewTextBoxColumn
+            // 
+            this.paletNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.paletNameDataGridViewTextBoxColumn.DataPropertyName = "PaletName";
+            this.paletNameDataGridViewTextBoxColumn.HeaderText = "Paletė";
+            this.paletNameDataGridViewTextBoxColumn.Name = "paletNameDataGridViewTextBoxColumn";
+            this.paletNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.paletNameDataGridViewTextBoxColumn.Width = 77;
+            // 
+            // codeIdDataGridViewTextBoxColumn
+            // 
+            this.codeIdDataGridViewTextBoxColumn.DataPropertyName = "CodeId";
+            this.codeIdDataGridViewTextBoxColumn.HeaderText = "CodeId";
+            this.codeIdDataGridViewTextBoxColumn.Name = "codeIdDataGridViewTextBoxColumn";
+            this.codeIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codeIdDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // codeNameDataGridViewTextBoxColumn
+            // 
+            this.codeNameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.codeNameDataGridViewTextBoxColumn.DataPropertyName = "CodeName";
+            this.codeNameDataGridViewTextBoxColumn.HeaderText = "Kodas";
+            this.codeNameDataGridViewTextBoxColumn.Name = "codeNameDataGridViewTextBoxColumn";
+            this.codeNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codeNameDataGridViewTextBoxColumn.Width = 76;
+            // 
+            // simCardDataGridViewTextBoxColumn
+            // 
+            this.simCardDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.simCardDataGridViewTextBoxColumn.DataPropertyName = "SimCard";
+            this.simCardDataGridViewTextBoxColumn.HeaderText = "SIM";
+            this.simCardDataGridViewTextBoxColumn.Name = "simCardDataGridViewTextBoxColumn";
+            this.simCardDataGridViewTextBoxColumn.ReadOnly = true;
+            this.simCardDataGridViewTextBoxColumn.Width = 58;
+            // 
+            // versionDataGridViewTextBoxColumn
+            // 
+            this.versionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.versionDataGridViewTextBoxColumn.DataPropertyName = "Version";
+            this.versionDataGridViewTextBoxColumn.HeaderText = "Versija";
+            this.versionDataGridViewTextBoxColumn.Name = "versionDataGridViewTextBoxColumn";
+            this.versionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.versionDataGridViewTextBoxColumn.Width = 81;
+            // 
+            // countryCodeDataGridViewTextBoxColumn
+            // 
+            this.countryCodeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.countryCodeDataGridViewTextBoxColumn.DataPropertyName = "CountryCode";
+            this.countryCodeDataGridViewTextBoxColumn.HeaderText = "Šalis";
+            this.countryCodeDataGridViewTextBoxColumn.Name = "countryCodeDataGridViewTextBoxColumn";
+            this.countryCodeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.countryCodeDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // batteryCountDataGridViewTextBoxColumn
+            // 
+            this.batteryCountDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.batteryCountDataGridViewTextBoxColumn.DataPropertyName = "BatteryCount";
+            this.batteryCountDataGridViewTextBoxColumn.HeaderText = "Baterija";
+            this.batteryCountDataGridViewTextBoxColumn.Name = "batteryCountDataGridViewTextBoxColumn";
+            this.batteryCountDataGridViewTextBoxColumn.ReadOnly = true;
+            this.batteryCountDataGridViewTextBoxColumn.Visible = false;
+            this.batteryCountDataGridViewTextBoxColumn.Width = 86;
+            // 
+            // addDateTimeDataGridViewTextBoxColumn
+            // 
+            this.addDateTimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.addDateTimeDataGridViewTextBoxColumn.DataPropertyName = "AddDateTime";
+            this.addDateTimeDataGridViewTextBoxColumn.HeaderText = "Data/Laikas";
+            this.addDateTimeDataGridViewTextBoxColumn.MinimumWidth = 100;
+            this.addDateTimeDataGridViewTextBoxColumn.Name = "addDateTimeDataGridViewTextBoxColumn";
+            this.addDateTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // modDateTimeDataGridViewTextBoxColumn
+            // 
+            this.modDateTimeDataGridViewTextBoxColumn.DataPropertyName = "ModDateTime";
+            this.modDateTimeDataGridViewTextBoxColumn.HeaderText = "ModDateTime";
+            this.modDateTimeDataGridViewTextBoxColumn.Name = "modDateTimeDataGridViewTextBoxColumn";
+            this.modDateTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.modDateTimeDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // serialsmodelBindingSource
+            // 
+            this.serialsmodelBindingSource.DataSource = typeof(K1020_PackingList.Models.Serials_model);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Eil.nr";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 67;
+            // 
+            // serialNrDataGridViewTextBoxColumn
+            // 
+            this.serialNrDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.serialNrDataGridViewTextBoxColumn.DataPropertyName = "SerialNr";
+            this.serialNrDataGridViewTextBoxColumn.HeaderText = "Serijinis";
+            this.serialNrDataGridViewTextBoxColumn.Name = "serialNrDataGridViewTextBoxColumn";
+            this.serialNrDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // serialTmpmodelBindingSource
+            // 
+            this.serialTmpmodelBindingSource.DataSource = typeof(K1020_PackingList.Models.SerialTmp_model);
             // 
             // idDataGridViewTextBoxColumn2
             // 
@@ -1430,72 +1497,6 @@ namespace K1020_PackingList
             // 
             this.serialsmodelBindingSource1.DataSource = typeof(K1020_PackingList.Models.Serials_model);
             // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
-            // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // printDocument2
-            // 
-            this.printDocument2.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument2_PrintPage);
-            // 
-            // printDocument3
-            // 
-            this.printDocument3.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument3_PrintPage);
-            // 
-            // printDocument4
-            // 
-            this.printDocument4.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument4_PrintPage);
-            // 
-            // printDocument5
-            // 
-            this.printDocument5.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument5_PrintPage);
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel8.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel8.Controls.Add(this.VersionLabel);
-            this.panel8.Controls.Add(this.label24);
-            this.panel8.Location = new System.Drawing.Point(-2, 657);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1215, 28);
-            this.panel8.TabIndex = 12;
-            // 
-            // VersionLabel
-            // 
-            this.VersionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.VersionLabel.AutoSize = true;
-            this.VersionLabel.ForeColor = System.Drawing.Color.White;
-            this.VersionLabel.Location = new System.Drawing.Point(1153, 8);
-            this.VersionLabel.Name = "VersionLabel";
-            this.VersionLabel.Size = new System.Drawing.Size(55, 13);
-            this.VersionLabel.TabIndex = 1;
-            this.VersionLabel.Text = "v 0.1.00.0";
-            // 
-            // label24
-            // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(5, 4);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(105, 18);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Darbuotojas:";
-            this.label24.Visible = false;
-            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1521,11 +1522,9 @@ namespace K1020_PackingList
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.serialsmodelBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.serialTmpmodelBindingSource)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -1538,9 +1537,11 @@ namespace K1020_PackingList
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.serialsmodelBindingSource1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.serialsmodelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.serialTmpmodelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.serialsmodelBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
